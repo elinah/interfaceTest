@@ -1,4 +1,4 @@
-public class Circle extends Shape{
+public class Circle extends Shape implements Area{
 
     private double radius;
 
@@ -11,8 +11,12 @@ public class Circle extends Shape{
 	return radius;
     }
 
+    public double getArea(){
+	return Math.PI * Math.pow(radius,2);
+    }
+
     public String toString(){
 	return "Circle "+getName()+" with radius of "+getRadius();
     }
-
+    
 }
