@@ -4,6 +4,10 @@ public class Sphere extends Circle{
 	super(radius,name);
     }
 
+    public double getVolume(){
+	Math.PI * Math.pow(radius, 3) * (4 / 3);
+    }
+
     public String toString(){
 	return "FIXME!";
     }
